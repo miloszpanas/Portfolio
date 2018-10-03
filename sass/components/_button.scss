@@ -3,9 +3,7 @@
     &:link,
     &:visited {
         display: inline-block;
-        color: $color-grey-dark;
         padding: 2rem 6rem;
-        background-color: #fff;
         font-size: 1.7rem;
         text-decoration: none;
         text-transform: uppercase;
@@ -25,5 +23,10 @@
         outline: none;
         transform: translateY(-.1rem);
         box-shadow: 0 1rem 2rem rgba($black,.2);
+    }
+
+    &--white {
+        background-color: #fff;
+        color: $color-grey-dark;
     }
 }
