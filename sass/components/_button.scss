@@ -1,0 +1,29 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        color: $color-grey-dark;
+        padding: 2rem 6rem;
+        background-color: #fff;
+        font-size: 1.7rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 10rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 2rem 3rem rgba($black,.2);
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 1rem 2rem rgba($black,.2);
+    }
+}
