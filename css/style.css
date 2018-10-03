@@ -43,20 +43,39 @@ body {
   font-weight: 700;
   border-radius: 10rem;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  transition: all .2s; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.5) scaleY(1.7);
+    opacity: 0; }
 
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-radius: 10rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all .4s; }
+
 .btn--white {
   background-color: #fff;
   color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .header {
   width: 100%;

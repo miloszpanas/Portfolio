@@ -11,11 +11,18 @@
         border-radius: 10rem;
         border: none;
         cursor: pointer;
+        position: relative;
+        transition: all .2s;
     }
 
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 2rem 3rem rgba($black,.2);
+
+        &::after {
+            transform: scaleX(1.5) scaleY(1.7);
+            opacity: 0;
+        }
     }
 
     &:active,
@@ -25,8 +32,25 @@
         box-shadow: 0 1rem 2rem rgba($black,.2);
     }
 
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        border-radius: 10rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all .4s;
+    }
+
     &--white {
         background-color: #fff;
         color: $color-grey-dark;
+
+        &::after {
+            background-color: #fff;
+        }
     }
 }
