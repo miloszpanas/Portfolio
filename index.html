@@ -13,10 +13,18 @@
 </head>
 <body>
 
-    <header class="header" data-vide-bg="vendors/motionplace2">
+    <header class="header">
+        <div class="background-video">
+            <video class="background-video__content" autoplay muted loop>
+                <source src="vendors/motionplace2.mp4" type="video/mp4"/>
+                <source src="vendors/motionplace2-1.webm" type="video/webm"/>
+            </video>
+        </div>
+
         <div class="header__logo-box">
             <img src="img/logo--medium.png" alt="Main logo" class="header__logo">
         </div>
+
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">Miłosz Panas</span>
@@ -25,8 +33,5 @@
             <a href="#" class="btn btn--white btn--animated">Get in touch</a>
         </div>
     </header>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="vendors/jquery.vide.js"></script>
 </body>
 </html>
