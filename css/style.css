@@ -85,11 +85,13 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .95;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
   .background-video__content {
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    z-index: -1; }
 
 .header {
   width: 100%;
@@ -97,7 +99,7 @@ body {
   position: relative;
   background-image: url(../../img/header-replacement.png);
   background-size: cover;
-  z-index: -1; }
+  z-index: -2; }
   .header__logo-box {
     position: absolute;
     top: 4.5rem;
