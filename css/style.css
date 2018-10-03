@@ -36,9 +36,7 @@ body {
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
-  color: #777;
   padding: 2rem 6rem;
-  background-color: #fff;
   font-size: 1.7rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -55,6 +53,10 @@ body {
   outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
 
 .header {
   width: 100%;
