@@ -6,10 +6,15 @@
     width: 100%;
     opacity: .95;
     overflow: hidden;
+    z-index: -1;
 
     &__content {
         height: 100%;
         width: 100%;
+        object-fit: cover;
+    }
+
+    .failsafe-image {
         object-fit: cover;
     }
 }
