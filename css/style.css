@@ -14,12 +14,12 @@ body {
 
 body {
   font-family: "Lato", sans-serif;
-  color: #beb1b1;
+  color: #d4c9c9;
   font-weight: 300;
   line-height: 1.7; }
 
 .heading-primary {
-  color: #beb1b1;
+  color: #d4c9c9;
   backface-visibility: hidden;
   margin-bottom: 7rem;
   text-transform: uppercase;
@@ -91,7 +91,9 @@ body {
     width: 100%;
     object-fit: cover; }
   .background-video .failsafe-image {
-    object-fit: cover; }
+    object-fit: cover;
+    width: 100%;
+    height: auto; }
 
 .header {
   width: 100%;
