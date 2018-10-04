@@ -25,7 +25,7 @@ body {
 body {
   font-family: "Lato", sans-serif;
   color: #d4c9c9;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7; }
 
 .heading-primary {
@@ -197,8 +197,8 @@ body {
   .about-info__text {
     transform: skewX(12deg); }
   .about-info__paragraph {
-    color: #000;
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: #333; }
 
 .section-about {
   padding: 11rem 0;
