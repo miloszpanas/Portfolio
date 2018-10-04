@@ -1,0 +1,52 @@
+.row {
+    width: $grid-default;
+}
+
+.about-info {
+    margin: 0 auto;
+
+
+    &__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 2rem 3rem 7rem rgba($color-secondary--light, .4);
+        border-radius: 3px;
+        background-color: rgba($white, .7);
+        padding: 7rem;
+    }
+
+
+    &__shape {
+        width: 30rem;
+        height: 30rem;
+        // border-radius: 50%;
+        float: left;
+        overflow: hidden;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+
+        @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            width: 30rem;
+            height: 30rem;
+            margin-right: 5rem;
+            margin-bottom: 1rem;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        // border-radius: 50%;
+    }
+
+    &__paragraph {
+        color: $color-secondary;
+        font-size: 2rem;
+    }
+}
