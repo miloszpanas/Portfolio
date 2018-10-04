@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
   padding: 3rem; }
 
+::selection {
+  background-color: #101d2c;
+  color: #d4c9c9; }
+
 body {
   font-family: "Lato", sans-serif;
   color: #d4c9c9;
@@ -28,11 +32,47 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3rem; }
+    letter-spacing: 3rem;
+    animation-name: fromLeft;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-timing-function: ease-out; }
   .heading-primary--sub {
     display: block;
     font-size: 2.5rem;
-    letter-spacing: 1rem; }
+    letter-spacing: 1rem;
+    animation-name: fromRight;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-timing-function: ease-out; }
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -76,6 +116,10 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--animated {
+  animation: fromBottom 1s ease-out 1s;
+  animation-fill-mode: backwards; }
 
 .background-video {
   position: absolute;

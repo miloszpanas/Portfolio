@@ -17,11 +17,21 @@ body {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 3rem;
+        animation-name: fromLeft;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-timing-function: ease-out;
+
+        // or shorthand => animation: comingInLeft 1s ease-out
     }
 
     &--sub {
         display: block;
         font-size: 2.5rem;
         letter-spacing: 1rem;
+        animation-name: fromRight;
+        animation-duration: 1s;
+        animation-delay: .5s;
+        animation-timing-function: ease-out;
     }
 }

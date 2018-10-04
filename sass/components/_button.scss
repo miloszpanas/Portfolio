@@ -53,4 +53,9 @@
             background-color: #fff;
         }
     }
+
+    &--animated {
+        animation: fromBottom 1s ease-out 1s;
+        animation-fill-mode: backwards;
+    }
 }
