@@ -23,6 +23,32 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: 100%;
+        width: 90vw;
+    }
+    
+
+    &__icons-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    &__icons-item {
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__icons-link {
+       text-decoration: none;
+    }
+
+    &__icon {
+        color: #fff;
+        font-size: 2.5rem;
+
+        
     }
 }

@@ -31,7 +31,7 @@ body {
 .heading-primary {
   color: #d4c9c9;
   backface-visibility: hidden;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   display: block; }
   .heading-primary--main {
@@ -86,7 +86,7 @@ body {
 @keyframes fromBottom {
   0% {
     opacity: 0;
-    transform: translateY(4rem); }
+    transform: translateY(5rem); }
   100% {
     opacity: 1;
     transform: translateY(0); } }
@@ -94,6 +94,7 @@ body {
 .btn, .btn:link, .btn:visited {
   display: inline-block;
   padding: 2rem 6rem;
+  margin-top: 4rem;
   font-size: 1.7rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -220,4 +221,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%; }
+    width: 90vw; }
+  .header__icons-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0; }
+  .header__icons-item:not(:last-child) {
+    margin-right: 2rem; }
+  .header__icons-link {
+    text-decoration: none; }
+  .header__icon {
+    color: #fff;
+    font-size: 2.5rem; }
