@@ -37,6 +37,7 @@
         bottom:4.5rem;
         left: 4.5rem;
         animation: appear 1s ease-out 1s;
+        animation-fill-mode: backwards;
     }
 
     &__icons-item {

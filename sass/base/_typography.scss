@@ -21,6 +21,7 @@ body {
         animation-delay: .5s;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
 
         // or shorthand => animation: comingInLeft 1s ease-out
     }
@@ -33,6 +34,7 @@ body {
         animation-delay: .5s;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
     }
 }
 
