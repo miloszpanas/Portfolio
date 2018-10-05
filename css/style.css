@@ -40,6 +40,7 @@ body {
     font-weight: 400;
     letter-spacing: 3rem;
     animation-name: fromLeft;
+    animation-delay: .5s;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
   .heading-primary--sub {
@@ -47,6 +48,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: 1rem;
     animation-name: fromRight;
+    animation-delay: .5s;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
 
@@ -90,6 +92,17 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes appear {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateX(-7rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -225,10 +238,15 @@ body {
   .header__icons-list {
     list-style-type: none;
     display: flex;
+    position: absolute;
+    flex-direction: column;
     justify-content: center;
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    bottom: 4.5rem;
+    left: 4.5rem;
+    animation: appear 1s ease-out 1s; }
   .header__icons-item:not(:last-child) {
-    margin-right: 2rem; }
+    margin-bottom: 1.1rem; }
   .header__icons-link {
     text-decoration: none; }
   .header__icon {

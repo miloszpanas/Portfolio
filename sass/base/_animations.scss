@@ -43,3 +43,21 @@
         transform: translateY(0);
     }
 }
+
+@keyframes appear {
+    0% {
+
+        display:none;
+        opacity: 0;
+        transform: translateX(-7rem);
+    }
+
+    80% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
