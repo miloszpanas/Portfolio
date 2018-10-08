@@ -50,15 +50,7 @@ body {
   letter-spacing: 0.2rem;
 
   &--white {
-    font-size: 5rem;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 700;
     background-image: linear-gradient(to right, $color-primary, #fff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2rem;
   }
 }
 .heading-paragraph {
@@ -66,4 +58,8 @@ body {
   font-size: 2rem;
   color: $color-secondary;
   font-weight: 400;
+
+  &--white {
+    color: $color-primary;
+  }
 }

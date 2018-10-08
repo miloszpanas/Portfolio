@@ -1,0 +1,15 @@
+.work {
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.btn-project {
+  color: #fff;
+}
