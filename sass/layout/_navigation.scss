@@ -66,17 +66,21 @@
   }
 
   &__link {
-    text-decoration: none;
-    color: $color-primary;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: inline-block;
-    position: relative;
-    padding: 1rem 0;
-    @include easeOut;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: inline-block;
+      position: relative;
+      padding: 1rem 0;
+      @include easeOut;
+    }
 
-    &:hover {
+    &:hover,
+    &:active {
       color: $color-golden;
     }
   }

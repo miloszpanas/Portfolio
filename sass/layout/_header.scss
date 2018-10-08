@@ -54,11 +54,19 @@
   }
 
   &__icons-link {
-    text-decoration: none;
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
   }
 
   &__icon {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 3rem;
+
+    &:hover,
+    &:active {
+      transform: scale(1.4);
+    }
   }
 }

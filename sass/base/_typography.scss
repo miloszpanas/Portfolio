@@ -43,15 +43,23 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(
-    to right,
-    $color-secondary,
-    $color-secondary--light
-  );
+  background-image: linear-gradient(to right, $color-golden, $color-yellow);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
+
+  &--white {
+    font-size: 5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+  }
 }
 .heading-paragraph {
   display: block;

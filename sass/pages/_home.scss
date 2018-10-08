@@ -1,5 +1,17 @@
-
 .section-about {
-    padding: 11rem 0;
-    background-color: $color-grey-light-2;
+  padding: 11rem 0;
+  background-color: $color-grey-light-2;
+  position: relative;
+}
+
+.my-works {
+  padding: 11rem 0;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-grey-dark, 0.9),
+      rgba($color-secondary--light, 0.9)
+    ),
+    url(../img/background-image-2.jpg);
+  background-size: cover;
+  background-position: top;
 }

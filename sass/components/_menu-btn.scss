@@ -6,31 +6,35 @@
   cursor: pointer;
   @include easeOut;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
   &__line {
     width: 3.8rem;
     height: 0.3rem;
-    margin: 0 0 .7rem 0;
+    margin: 0 0 0.7rem 0;
     background: #fff;
     @include easeOut;
   }
 
   // Rotate into 'X' with menu items
   &.close {
-      transform: rotate(180deg) translateY(4px);
+    transform: rotate(180deg) translateY(4px);
 
-      .menu-btn__line {
-          // Line 1 - Rotate
-        &:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-          // Line 2 - Hide
-        &:nth-child(2) {
-            opacity: 0;
-        }
-          // Line 3 - Rotate
-        &:nth-child(3) {
-            transform: rotate(-45deg) translate(8px, -8px);
-        }
+    .menu-btn__line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
       }
-   }
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+      }
+    }
+  }
 }
