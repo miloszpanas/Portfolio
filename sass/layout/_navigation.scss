@@ -1,0 +1,22 @@
+.navigation {
+    position: absolute;
+    z-index: 4;
+  &__author {
+  }
+
+  &__portrait {
+  }
+
+  &__menu {
+  }
+
+  &__item {
+    font-size: 2rem;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+}

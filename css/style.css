@@ -20,16 +20,16 @@ body {
 
 ::selection {
   background-color: #101d2c;
-  color: #d4c9c9; }
+  color: #e7dede; }
 
 body {
-  font-family: "Lato", sans-serif;
-  color: #d4c9c9;
+  font-family: "Lato", Tahoma, Verdana, sans-serif;
+  color: #e7dede;
   font-weight: 400;
   line-height: 1.7; }
 
 .heading-primary {
-  color: #d4c9c9;
+  color: #e7dede;
   backface-visibility: hidden;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -40,7 +40,7 @@ body {
     font-weight: 400;
     letter-spacing: 3rem;
     animation-name: fromLeft;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards; }
@@ -49,7 +49,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: 1rem;
     animation-name: fromRight;
-    animation-delay: .5s;
+    animation-delay: 0.5s;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards; }
@@ -63,7 +63,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem; }
+  letter-spacing: 0.2rem; }
 
 .heading-paragraph {
   display: block;
@@ -202,7 +202,29 @@ body {
     transform: skewX(12deg); }
   .about-info__paragraph {
     font-size: 2rem;
-    color: #333; }
+    color: #444; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 4;
+  right: 5.5rem;
+  top: 5.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn__line {
+    width: 3.8rem;
+    height: 0.3rem;
+    margin: 0 0 .7rem 0;
+    background: #fff;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg) translateY(4px); }
+    .menu-btn.close .menu-btn__line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .menu-btn__line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .menu-btn__line:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px); }
 
 .section-about {
   padding: 11rem 0;
@@ -246,3 +268,13 @@ body {
   .header__icon {
     color: #fff;
     font-size: 2.5rem; }
+
+.navigation {
+  position: absolute;
+  z-index: 4; }
+  .navigation__item {
+    font-size: 2rem;
+    list-style-type: none; }
+  .navigation__link {
+    text-decoration: none;
+    color: #fff; }

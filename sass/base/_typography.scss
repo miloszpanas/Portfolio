@@ -1,59 +1,61 @@
 body {
-    font-family: $font-primary;
-    color: $color-primary;
-    font-weight: 400;
-    line-height: 1.7;
+  font-family: $font-primary;
+  color: $color-primary;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 .heading-primary {
-    color: $color-primary;
-    backface-visibility: hidden;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+  color: $color-primary;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  display: block;
+
+  &--main {
     display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3rem;
+    animation-name: fromLeft;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 
-    &--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3rem;
-        animation-name: fromLeft;
-        animation-delay: .5s;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
+    // or shorthand => animation: comingInLeft 1s ease-out
+  }
 
-        // or shorthand => animation: comingInLeft 1s ease-out
-    }
-
-    &--sub {
-        display: block;
-        font-size: 2.5rem;
-        letter-spacing: 1rem;
-        animation-name: fromRight;
-        animation-delay: .5s;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: backwards;
-    }
+  &--sub {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    animation-name: fromRight;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+  }
 }
 
 .heading-secondary {
-    font-size: 5rem;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-image: linear-gradient(to right, $color-secondary, $color-secondary--light);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: .2rem;
+  font-size: 5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-secondary,
+    $color-secondary--light
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
 }
-
 .heading-paragraph {
-    display: block;
-    font-size: 2rem;
-    color: $color-secondary;
-    font-weight: 400;
-
+  display: block;
+  font-size: 2rem;
+  color: $color-secondary;
+  font-weight: 400;
 }

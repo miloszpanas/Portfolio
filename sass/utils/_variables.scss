@@ -1,17 +1,21 @@
 // FONT VARIABLES
-$font-primary: 'Lato', sans-serif;
-$font-secondary: 'PT Sans Narrow', sans-serif;
+$font-primary: "Lato", Tahoma, Verdana, sans-serif;
+$font-secondary: "PT Sans Narrow", sans-serif;
 
 // COLORS
-$color-primary: #d4c9c9;
+$color-primary: #e7dede;
 $color-secondary: #101d2c;
 $color-secondary--light: #192d5c;
 
-$color-secondary-light-left: #25345F;
+$color-secondary-light-left: #25345f;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$color-grey-dark-3: #444;
+$color-grey-dark-4: #333;
+
+$color-grey-1: #444;
+$color-grey-2: #999;
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -20,24 +24,21 @@ $color-grey-light-3: #d4c9c9e3;
 $black: #000;
 $white: #fff;
 
-
 // $color-primary: #55c57a;
 // $color-primary--light:  #7ed56f;
 // $color-primary--dark: #28b485;
 
 // $color-secondary-light: #ffb900;
 $color-orange: #ff7730;
+$color-yellow: #eece1a;
 
 // $color-tertiary-light: #2998ff;
 // $color-tertiary-dark: #5643fa;
 
-
 // $color-grey-light-1: #f7f7f7;
 // $color-grey-light-2: #eee;
 
-
 // $color-white: #fff;
-
 
 // FONTS
 $default: 1.6rem;

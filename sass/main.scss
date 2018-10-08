@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "utils/utility-classes";
+@import "utils/mixins";
 
 @import "base/base";
 @import "base/typography";
@@ -8,8 +9,11 @@
 @import "components/button";
 @import "components/background-video";
 @import "components/about-info";
+@import "components/menu-btn";
 
 @import "pages/home";
 
 @import "layout/header";
+@import "layout/navigation";
+
 
