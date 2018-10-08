@@ -1,22 +1,90 @@
 .navigation {
-    position: absolute;
-    z-index: 4;
-  &__author {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  z-index: 4;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
   }
 
-  &__portrait {
+  &__author,
+  &__menu {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
   }
 
   &__menu {
+    background: $color-secondary-2;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide the menu in from the top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__author {
+    background: $color-secondary;
+    @include easeOut;
+    transform: translate3d(0, 100%, 0);
+
+    &.show {
+      // Slide the author div from the bottom
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__portrait {
+    width: 30rem;
+    height: 30rem;
+    background-image: url("../img/picture-1.jpg");
+    background-size: cover;
+    filter: brightness(70%);
+    border-radius: 50%;
+    border: 3px solid $color-golden;
   }
 
   &__item {
-    font-size: 2rem;
     list-style-type: none;
+    transform: translate3d(90rem, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from right
+      transform: translate3d(0, 0, 0);
+    }
   }
 
   &__link {
     text-decoration: none;
-    color: #fff;
+    color: $color-primary;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0;
+    @include easeOut;
+
+    &:hover {
+      color: $color-golden;
+    }
+  }
+}
+
+// Delay each navigation item slide by 0.1s
+@for $x from 1 through 4 {
+  .navigation__item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
