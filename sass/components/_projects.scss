@@ -3,10 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 6.5rem;
-    align-items: stretch;
-  }
-
-  &__item {
+    align-items: center;
   }
 
   &__image {
