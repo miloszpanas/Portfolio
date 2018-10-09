@@ -4,6 +4,14 @@
 .margin-bottom-big {
   margin-bottom: 7rem !important; }
 
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.row-2 {
+  max-width: 140rem;
+  margin: 0 auto; }
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -192,10 +200,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
-
-.row {
-  max-width: 117rem;
-  margin: 0 auto; }
 
 .about-info {
   margin: 0 auto; }

@@ -5,3 +5,13 @@
 .margin-bottom-big {
   margin-bottom: 7rem !important;
 }
+
+.row {
+  max-width: $grid-default;
+  margin: 0 auto;
+}
+
+.row-2 {
+  max-width: $grid-2;
+  margin: 0 auto;
+}
