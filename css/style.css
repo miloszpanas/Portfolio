@@ -266,7 +266,7 @@ body {
     .menu-btn.close .menu-btn__line:nth-child(3) {
       transform: rotate(-45deg) translate(8px, -8px); }
 
-.btn-project {
+.btn-project, .btn-project:link, .btn-project:visited {
   display: block;
   padding: 0.5rem 1rem;
   border: none;
@@ -275,26 +275,31 @@ body {
   font-size: 3rem;
   text-decoration: none;
   border-radius: 2px; }
-  .btn-project:last-child {
-    margin-top: 0; }
-  .btn-project--dark {
-    background-color: #1b2e44;
-    color: #e7dede; }
-    .btn-project--dark:hover {
-      background: #31537b;
-      transition: all 0.5s ease-out; }
-  .btn-project--light {
-    background-color: peru;
-    color: #e7dede; }
-    .btn-project--light:hover {
-      background: #845222;
-      transition: all 0.5s ease-out; }
+
+.btn-project:last-child {
+  margin-top: 0; }
+
+.btn-project:focus {
+  transform: translateY(-0.1rem); }
+
+.btn-project--dark {
+  background-color: #1b2e44;
+  color: #e7dede; }
+  .btn-project--dark:hover, .btn-project--dark:active {
+    background: #31537b;
+    transition: all 0.5s ease-out; }
+
+.btn-project--light {
+  background-color: peru;
+  color: #e7dede; }
+  .btn-project--light:hover, .btn-project--light:active {
+    background: #845222;
+    transition: all 0.5s ease-out; }
 
 .work__projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6.5rem;
-  align-items: center; }
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-gap: 7rem; }
 
 .work__image {
   width: 100%;
@@ -377,7 +382,7 @@ body {
   position: relative; }
 
 .work {
-  padding: 11rem 6rem;
+  padding: 11rem 15rem;
   background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-2.jpg);
   background-size: cover;
   background-position: top; }

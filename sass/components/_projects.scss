@@ -1,9 +1,8 @@
 .work {
   &__projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6.5rem;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-gap: 7rem;
   }
 
   &__image {
