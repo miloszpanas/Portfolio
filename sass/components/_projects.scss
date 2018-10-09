@@ -1,15 +1,24 @@
 .work {
   &__projects {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6.5rem;
+    align-items: stretch;
+  }
+
+  &__item {
   }
 
   &__image {
     width: 100%;
-  }
-}
+    display: block;
+    border: 3px $color-primary solid;
+    align-self: start;
 
-.btn-project {
-  color: #fff;
+    &:hover {
+      opacity: 0.7;
+      border-color: $color-golden;
+      @include easeOut;
+    }
+  }
 }

@@ -1,0 +1,34 @@
+.btn-project {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: 2px;
+
+  &:last-child {
+    margin-top: 0;
+  }
+
+  &--dark {
+    background-color: $color-secondary;
+    color: $color-primary;
+
+    &:hover {
+      background: lighten($color-secondary, 20);
+      @include easeOut;
+    }
+  }
+
+  &--light {
+    background-color: $color-golden;
+    color: $color-primary;
+
+    &:hover {
+      background: darken($color-golden, 20);
+      @include easeOut;
+    }
+  }
+}

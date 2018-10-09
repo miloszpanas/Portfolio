@@ -201,7 +201,7 @@ body {
   margin: 0 auto; }
   .about-info__wrapper {
     max-width: 100%;
-    height: 45rem;
+    min-height: 45rem;
     margin: 0 auto;
     box-shadow: 3rem 4rem 7rem rgba(25, 45, 92, 0.4);
     border-radius: 3px;
@@ -262,31 +262,60 @@ body {
     .menu-btn.close .menu-btn__line:nth-child(3) {
       transform: rotate(-45deg) translate(8px, -8px); }
 
+.btn-project {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: 2px; }
+  .btn-project:last-child {
+    margin-top: 0; }
+  .btn-project--dark {
+    background-color: #1b2e44;
+    color: #e7dede; }
+    .btn-project--dark:hover {
+      background: #385f8d;
+      transition: all 0.5s ease-out; }
+  .btn-project--light {
+    background-color: peru;
+    color: #e7dede; }
+    .btn-project--light:hover {
+      background: #845222;
+      transition: all 0.5s ease-out; }
+
 .work__projects {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6.5rem;
+  align-items: stretch; }
 
 .work__image {
-  width: 100%; }
-
-.btn-project {
-  color: #fff; }
+  width: 100%;
+  display: block;
+  border: 3px #e7dede solid;
+  align-self: start; }
+  .work__image:hover {
+    opacity: 0.7;
+    border-color: peru;
+    transition: all 0.5s ease-out; }
 
 .section-about {
-  padding: 11rem 0;
+  padding: 11rem 0 16rem 0;
   background-color: #eee;
   position: relative; }
 
 .work {
-  padding: 11rem 4rem;
+  padding: 11rem 6rem;
   background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-2.jpg);
   background-size: cover;
   background-position: top; }
 
 .header {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-1.jpg);
   background-size: cover;
