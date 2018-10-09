@@ -41,6 +41,12 @@ $background-primary: linear-gradient(
   rgba($color-secondary--light, 0.9)
 );
 
+$background-secondary: linear-gradient(
+  to right top,
+  rgba($color-golden, 0.9),
+  rgba($color-yellow, 0.9)
+);
+
 // $color-tertiary-light: #2998ff;
 // $color-tertiary-dark: #5643fa;
 

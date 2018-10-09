@@ -3,10 +3,10 @@
   &:link,
   &:visited {
     display: block;
-    padding: 0.5rem 1rem;
-    border: none;
+    padding: 0.5rem 1.5rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+    border: none;
     font-size: 3rem;
     text-decoration: none;
     border-radius: 2px;
@@ -20,24 +20,25 @@
   }
 
   &--dark {
-    background-color: $color-secondary;
+    background-color: $color-secondary-2;
     color: $color-primary;
 
     &:hover,
     &:active {
-      background: lighten($color-secondary, 15);
+      background: lighten($color-secondary-2, 20);
       @include easeOut;
     }
   }
 
   &--light {
     background-color: $color-golden;
-    color: $color-primary;
+    color: $color-secondary-2;
 
     &:hover,
     &:active {
       background: darken($color-golden, 20);
       @include easeOut;
+      color: $color-primary;
     }
   }
 }

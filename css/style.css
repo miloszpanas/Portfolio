@@ -268,10 +268,10 @@ body {
 
 .btn-project, .btn-project:link, .btn-project:visited {
   display: block;
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 0.5rem 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  border: none;
   font-size: 3rem;
   text-decoration: none;
   border-radius: 2px; }
@@ -283,18 +283,19 @@ body {
   transform: translateY(-0.1rem); }
 
 .btn-project--dark {
-  background-color: #1b2e44;
+  background-color: #0b1622;
   color: #e7dede; }
   .btn-project--dark:hover, .btn-project--dark:active {
-    background: #31537b;
+    background: #24486f;
     transition: all 0.5s ease-out; }
 
 .btn-project--light {
   background-color: peru;
-  color: #e7dede; }
+  color: #0b1622; }
   .btn-project--light:hover, .btn-project--light:active {
     background: #845222;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    color: #e7dede; }
 
 .work__projects {
   display: grid;
