@@ -439,9 +439,11 @@ body {
   text-decoration: none; }
 
 .contact__social-icon {
-  color: #e7dede; }
+  background-image: linear-gradient(to right, peru, #eece1a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
   .contact__social-icon:hover, .contact__social-icon:active {
-    color: peru;
     transform: scale(1.2);
     transition: all 0.3s ease-out; }
 

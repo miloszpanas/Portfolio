@@ -45,11 +45,14 @@
   }
 
   &__social-icon {
-    color: $color-primary;
+    // color: $color-primary;
+    background-image: linear-gradient(to right, $color-golden, $color-yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
     &:hover,
     &:active {
-      color: $color-golden;
       transform: scale(1.2);
       @include easeOut-2;
     }
