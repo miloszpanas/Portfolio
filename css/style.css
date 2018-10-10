@@ -474,6 +474,7 @@ body {
   position: relative;
   background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-1.jpg);
   background-size: cover;
+  backface-visibility: hidden;
   background-position: top; }
   .header__logo-box {
     position: absolute;
