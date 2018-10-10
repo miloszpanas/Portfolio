@@ -12,6 +12,7 @@ const navItems = document.querySelectorAll(".navigation__item");
 
 let showMenu = false;
 
+menuBtnBackground.addEventListener("click", toggleMenu);
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {

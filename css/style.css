@@ -254,7 +254,8 @@ body {
   z-index: 1;
   border-radius: 50%;
   top: 2.9rem;
-  right: 3.6rem; }
+  right: 3.6rem;
+  cursor: pointer; }
   .menu-button-background.hide {
     display: none; }
 
@@ -412,6 +413,12 @@ body {
 .technologies {
   padding: 11rem 6rem;
   background-color: #eee; }
+
+.contact {
+  padding: 11rem 6rem;
+  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-3.jpg);
+  background-size: cover;
+  background-position: top; }
 
 .header {
   width: 100%;
