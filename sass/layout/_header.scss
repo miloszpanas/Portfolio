@@ -57,11 +57,16 @@
 
   &__icon {
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.7rem;
+    background-image: linear-gradient(to right, $color-golden, $color-yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
     &:hover,
     &:active {
       transform: scale(1.4);
+      @include easeOut-2;
     }
   }
 }

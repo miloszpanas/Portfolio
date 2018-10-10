@@ -4,6 +4,9 @@
 .margin-bottom-big {
   margin-bottom: 7rem !important; }
 
+.text-golden {
+  color: peru; }
+
 .row {
   max-width: 120rem;
   margin: 0 auto; }
@@ -66,6 +69,11 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards; }
+    .heading-primary--main-2 {
+      background-image: linear-gradient(to right, peru, #eece1a);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent; }
   .heading-primary--sub {
     display: block;
     font-size: 2.5rem;
@@ -304,19 +312,19 @@ body {
   color: #e7dede; }
   .btn-project--dark:hover, .btn-project--dark:active {
     background: #24486f;
-    transition: all 0.5s ease-out; }
+    transition: all 0.3s ease-out; }
 
 .btn-project--light {
   background-color: peru;
   color: #0b1622; }
   .btn-project--light:hover, .btn-project--light:active {
     background: #845222;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     color: #e7dede; }
 
 .work__projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 7rem; }
 
 .work__image {
@@ -399,6 +407,44 @@ body {
   grid-row: 8 / -1;
   grid-column: 7 / -1; }
 
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.contact__item {
+  font-size: 3rem;
+  border: 3px #e7dede solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out; }
+  .contact__item:hover {
+    padding: 1rem 2rem;
+    background: rgba(205, 133, 63, 0.5);
+    color: #e7dede; }
+  .contact__item:hover .text-golden {
+    color: #e7dede; }
+
+.contact__social-list {
+  display: flex;
+  list-style-type: none; }
+
+.contact__social-item {
+  font-size: 5.5rem; }
+  .contact__social-item:not(:last-child) {
+    margin-right: 2.1rem; }
+
+.contact__social-link {
+  text-decoration: none; }
+
+.contact__social-icon {
+  color: #e7dede; }
+  .contact__social-icon:hover, .contact__social-icon:active {
+    color: peru;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out; }
+
 .section-about {
   padding: 11rem 0 16rem 0;
   background-color: #eee;
@@ -457,9 +503,14 @@ body {
     text-decoration: none; }
   .header__icon {
     color: #fff;
-    font-size: 3rem; }
+    font-size: 3.7rem;
+    background-image: linear-gradient(to right, peru, #eece1a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
     .header__icon:hover, .header__icon:active {
-      transform: scale(1.4); }
+      transform: scale(1.4);
+      transition: all 0.3s ease-out; }
 
 .navigation {
   position: fixed;

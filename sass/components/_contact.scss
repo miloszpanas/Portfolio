@@ -1,0 +1,57 @@
+.contact {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 3rem;
+    border: 3px $color-primary solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 1rem 2rem;
+      background: rgba($color-golden, 0.5);
+      color: $color-primary;
+    }
+
+    &:hover .text-golden {
+      color: $color-primary;
+    }
+  }
+
+  &__social {
+  }
+
+  &__social-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__social-item {
+    font-size: 5.5rem;
+
+    &:not(:last-child) {
+      margin-right: 2.1rem;
+    }
+  }
+
+  &__social-link {
+    text-decoration: none;
+  }
+
+  &__social-icon {
+    color: $color-primary;
+
+    &:hover,
+    &:active {
+      color: $color-golden;
+      transform: scale(1.2);
+      @include easeOut-2;
+    }
+  }
+}

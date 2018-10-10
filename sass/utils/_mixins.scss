@@ -2,6 +2,10 @@
   transition: all 0.5s ease-out;
 }
 
+@mixin easeOut-2 {
+  transition: all 0.3s ease-out;
+}
+
 //  MEDIA QUERIES MANAGER
 /*
 0 - 600px:      Phone
