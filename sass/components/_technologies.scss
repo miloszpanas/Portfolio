@@ -1,4 +1,10 @@
 .technologies {
+  &__wrapper {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   &__gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);

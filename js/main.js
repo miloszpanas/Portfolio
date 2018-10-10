@@ -4,6 +4,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".navigation");
 const menuList = document.querySelector(".navigation__menu");
 const menuAuthor = document.querySelector(".navigation__author");
+const menuBtnBackground = document.querySelector(".menu-button-background");
 
 const navItems = document.querySelectorAll(".navigation__item");
 
@@ -20,6 +21,7 @@ function toggleMenu() {
     menuAuthor.classList.add("show");
     menuList.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
+    menuBtnBackground.classList.add("hide");
 
     // Set menu state
     showMenu = true;
@@ -29,6 +31,7 @@ function toggleMenu() {
     menuAuthor.classList.remove("show");
     menuList.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
+    menuBtnBackground.classList.remove("hide");
 
     // Set menu state
     showMenu = false;

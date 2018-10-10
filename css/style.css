@@ -91,11 +91,14 @@ body {
 
 .heading-paragraph {
   display: block;
+  margin: 0 auto;
   font-size: 2rem;
-  color: #1b2e44;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 0.3rem 0; }
   .heading-paragraph--white {
     color: #e7dede; }
+  .heading-paragraph--dark {
+    color: #1b2e44; }
 
 @keyframes fromLeft {
   0% {
@@ -242,29 +245,42 @@ body {
     font-size: 2rem;
     color: #444; }
 
+.menu-button-background {
+  position: fixed;
+  width: 7.5rem;
+  height: 7.5rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 50%;
+  top: 2.9rem;
+  right: 3.6rem; }
+  .menu-button-background.hide {
+    display: none; }
+
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   right: 5.5rem;
   top: 5.5rem;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn:hover {
-    transform: scale(1.1); }
   .menu-btn__line {
     width: 3.8rem;
     height: 0.3rem;
     margin: 0 0 0.7rem 0;
-    background: #fff;
+    background: #1b2e44;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg) translateY(4px); }
-    .menu-btn.close .menu-btn__line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .menu-btn__line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .menu-btn__line:nth-child(3) {
-      transform: rotate(-45deg) translate(8px, -8px); }
+    .menu-btn.close .menu-btn__line {
+      background: #fff; }
+      .menu-btn.close .menu-btn__line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); }
+      .menu-btn.close .menu-btn__line:nth-child(2) {
+        opacity: 0; }
+      .menu-btn.close .menu-btn__line:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px); }
 
 .btn-project, .btn-project:link, .btn-project:visited {
   display: block;
@@ -311,6 +327,11 @@ body {
     opacity: 0.7;
     border-color: peru;
     transition: all 0.5s ease-out; }
+
+.technologies__wrapper {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
 
 .technologies__gallery {
   display: grid;
@@ -501,3 +522,6 @@ body {
 
 .navigation__item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.navigation__item:nth-child(5) {
+  transition-delay: 0.5s; }
