@@ -194,7 +194,7 @@ body {
     background-color: #fff; }
 
 .btn--animated {
-  animation: fromBottom 1s ease-out 1s;
+  animation: fromBottom 1s ease-out 0.8s;
   animation-fill-mode: backwards; }
 
 .background-video {
@@ -497,7 +497,7 @@ body {
     margin: 2rem 0;
     bottom: 4.5rem;
     left: 4.5rem;
-    animation: appear 1s ease-out 1s;
+    animation: appear 1s ease-out 0.7s;
     animation-fill-mode: backwards; }
   .header__icons-item:not(:last-child) {
     margin-bottom: 1.1rem; }
