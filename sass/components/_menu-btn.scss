@@ -14,10 +14,10 @@
     display: none;
   }
 
-  @include media(phone-pxr-2) {
+  @include media(tab-port) {
     width: 7rem;
     height: 7rem;
-    background: green;
+    background: orange;
   }
 
   @include media(phone) {

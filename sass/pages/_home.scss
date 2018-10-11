@@ -18,12 +18,8 @@
     padding: 11rem 10rem;
   }
 
-  @include media(phone-pxr-2) {
-    padding: 7rem 2rem;
-  }
-
   @include media(tab-port) {
-    padding: 7rem 10rem;
+    padding: 7rem 4rem;
   }
 
   @include media(phone) {

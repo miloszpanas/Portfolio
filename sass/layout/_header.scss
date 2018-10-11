@@ -6,15 +6,13 @@
   background-size: cover;
   background-position: top;
 
-  @include media(phone-land-large) {
+  @include media(tab-port) {
     height: 100vh;
   }
 
-  // @include media(phone-land-medium) {
-  //   height: 100vh;
-  // }
-
-  // @include media(phone-pxr-2) {}
+  @include media(phone-land-large) {
+    height: 100vh;
+  }
 
   @include media(phone) {
     height: 100vh;
@@ -33,6 +31,10 @@
   &__logo {
     height: 5.5rem;
 
+    @include media(tab-port) {
+      height: 4.5rem;
+    }
+
     @include media(phone-land-medium) {
       height: 4.5rem;
     }
@@ -49,6 +51,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90vw;
+
+    @include media(tab-port) {
+      top: 56%;
+    }
 
     @include media(phone-land-large) {
       top: 56%;
@@ -75,6 +81,11 @@
     animation: appear 1s ease-out 0.7s;
     animation-fill-mode: backwards;
     z-index: 2;
+
+    @include media(tab-port) {
+      letter-spacing: 0.5rem;
+      font-size: 2.5rem;
+    }
 
     @include media(phone-land-large) {
       bottom: 0.5rem;

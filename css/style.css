@@ -78,15 +78,11 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards; }
-    @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
-      .heading-primary--main {
-        letter-spacing: 1.1rem;
-        font-size: 5rem; } }
-    @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+    @media only screen and (max-width: 56.25em) {
       .heading-primary--main {
         letter-spacing: 0.4rem;
         font-size: 5rem; } }
-    @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
       .heading-primary--main {
         letter-spacing: 0.4rem;
         font-size: 5rem; } }
@@ -108,6 +104,10 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards; }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        letter-spacing: 0.4rem;
+        font-size: 2.1rem; } }
     @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
       .heading-primary--sub {
         letter-spacing: 0.7rem;
@@ -116,10 +116,6 @@ body {
       .heading-primary--sub {
         letter-spacing: 0.7rem;
         font-size: 2.2rem; } }
-    @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
-      .heading-primary--sub {
-        letter-spacing: 0.4rem;
-        font-size: 2.1rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.4rem;
@@ -138,9 +134,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 4rem; } }
-  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
-    .heading-secondary {
-      font-size: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 4.2rem; } }
@@ -149,9 +142,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-secondary--small-lh {
       line-height: 1.4; } }
-  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
-    .heading-secondary--small-lh {
-      font-size: 1.4; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary--small-lh {
       line-height: 1.4; } }
@@ -285,7 +275,8 @@ body {
     @media only screen and (max-width: 56.25em) {
       .about-info__wrapper {
         transform: skewX(0);
-        max-width: 80vw; } }
+        max-width: 80vw;
+        box-shadow: 2rem 2rem 7rem rgba(25, 45, 92, 0.4); } }
     @media only screen and (max-width: 37.5em) {
       .about-info__wrapper {
         max-width: 85vw;
@@ -364,11 +355,11 @@ body {
   cursor: pointer; }
   .menu-button-background.hide {
     display: none; }
-  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (max-width: 56.25em) {
     .menu-button-background {
       width: 7rem;
       height: 7rem;
-      background: green; } }
+      background: orange; } }
   @media only screen and (max-width: 37.5em) {
     .menu-button-background {
       width: 7rem;
@@ -582,12 +573,9 @@ body {
   @media only screen and (max-width: 75em) {
     .work {
       padding: 11rem 10rem; } }
-  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
-    .work {
-      padding: 7rem 2rem; } }
   @media only screen and (max-width: 56.25em) {
     .work {
-      padding: 7rem 10rem; } }
+      padding: 7rem 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .work {
       padding: 7rem 2rem; } }
@@ -598,7 +586,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .technologies {
       padding: 8rem 5rem; } }
-  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-width: 37.5) and (max-width: 43.5em) and (-webkit-min-device-pixel-ratio: 2) {
     .technologies {
       padding: 7rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -618,6 +606,9 @@ body {
   background-image: linear-gradient(to right top, rgba(153, 153, 153, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-1.jpg);
   background-size: cover;
   background-position: top; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      height: 100vh; } }
   @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
     .header {
       height: 100vh; } }
@@ -633,6 +624,9 @@ body {
     left: 4.5rem; }
   .header__logo {
     height: 5.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        height: 4.5rem; } }
     @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
       .header__logo {
         height: 4.5rem; } }
@@ -646,6 +640,9 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90vw; }
+    @media only screen and (max-width: 56.25em) {
+      .header__text-box {
+        top: 56%; } }
     @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
       .header__text-box {
         top: 56%; } }
@@ -667,6 +664,10 @@ body {
     animation: appear 1s ease-out 0.7s;
     animation-fill-mode: backwards;
     z-index: 2; }
+    @media only screen and (max-width: 56.25em) {
+      .header__icons-list {
+        letter-spacing: 0.5rem;
+        font-size: 2.5rem; } }
     @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
       .header__icons-list {
         bottom: 0.5rem;
