@@ -576,12 +576,12 @@ body {
   @media only screen and (max-width: 75em) {
     .work {
       padding: 11rem 10rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .work {
-      padding: 7rem 10rem; } }
   @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
     .work {
       padding: 7rem 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .work {
+      padding: 7rem 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .work {
       padding: 7rem 2rem; } }
