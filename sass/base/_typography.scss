@@ -33,6 +33,11 @@ body {
       font-size: 5rem;
     }
 
+    @include media(phone-pxr-2) {
+      letter-spacing: 0.4rem;
+      font-size: 5rem;
+    }
+
     @include media(phone) {
       letter-spacing: 0.4rem;
       font-size: 5rem;
@@ -68,6 +73,11 @@ body {
       font-size: 2.2rem;
     }
 
+    @include media(phone-pxr-2) {
+      letter-spacing: 0.4rem;
+      font-size: 2.1rem;
+    }
+
     @include media(phone) {
       letter-spacing: 0.4rem;
       font-size: 2.1rem;
@@ -90,6 +100,10 @@ body {
     font-size: 4rem;
   }
 
+  @include media(phone-pxr-2) {
+    font-size: 4rem;
+  }
+
   @include media(phone) {
     font-size: 4.2rem;
   }
@@ -101,6 +115,10 @@ body {
   &--small-lh {
     @include media(tab-port) {
       line-height: 1.4;
+    }
+
+    @include media(phone-pxr-2) {
+      font-size: 1.4;
     }
 
     @include media(phone) {

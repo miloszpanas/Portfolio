@@ -22,8 +22,12 @@
     padding: 7rem 10rem;
   }
 
+  @include media(phone-pxr-2) {
+    padding: 7rem 2rem;
+  }
+
   @include media(phone) {
-    padding: 7rem 3rem;
+    padding: 7rem 2rem;
   }
 }
 
@@ -33,6 +37,10 @@
 
   @include media(tab-port) {
     padding: 8rem 5rem;
+  }
+
+  @include media(phone-pxr-2) {
+    padding: 7rem 2rem;
   }
 
   @include media(phone) {

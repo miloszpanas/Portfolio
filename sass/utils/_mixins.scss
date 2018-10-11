@@ -32,6 +32,12 @@ ORDER: Base + ty[pgra[hy > general layout + grid > page layout > components
     } // 600px
   }
 
+  @if $breakpoint == phone-pxr-2 {
+    @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    } // 600px
+  }
+
   @if $breakpoint == phone-land-small {
     @media only screen and (min-width: 20em) and (max-width: 35.5em) and (orientation: landscape) {
       @content;

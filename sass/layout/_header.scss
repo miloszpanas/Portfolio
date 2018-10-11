@@ -10,9 +10,11 @@
     height: 100vh;
   }
 
-  @include media(phone-land-medium) {
-    height: 100vh;
-  }
+  // @include media(phone-land-medium) {
+  //   height: 100vh;
+  // }
+
+  // @include media(phone-pxr-2) {}
 
   @include media(phone) {
     height: 100vh;

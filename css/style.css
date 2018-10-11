@@ -86,6 +86,10 @@ body {
       .heading-primary--main {
         letter-spacing: 0.4rem;
         font-size: 5rem; } }
+    @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+      .heading-primary--main {
+        letter-spacing: 0.4rem;
+        font-size: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 0.4rem;
@@ -112,6 +116,10 @@ body {
       .heading-primary--sub {
         letter-spacing: 0.7rem;
         font-size: 2.2rem; } }
+    @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+      .heading-primary--sub {
+        letter-spacing: 0.4rem;
+        font-size: 2.1rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.4rem;
@@ -130,6 +138,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 4rem; } }
+  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    .heading-secondary {
+      font-size: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 4.2rem; } }
@@ -138,6 +149,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-secondary--small-lh {
       line-height: 1.4; } }
+  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    .heading-secondary--small-lh {
+      font-size: 1.4; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary--small-lh {
       line-height: 1.4; } }
@@ -565,9 +579,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .work {
       padding: 7rem 10rem; } }
+  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    .work {
+      padding: 7rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .work {
-      padding: 7rem 3rem; } }
+      padding: 7rem 2rem; } }
 
 .technologies {
   padding: 11rem 6rem;
@@ -575,6 +592,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .technologies {
       padding: 8rem 5rem; } }
+  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    .technologies {
+      padding: 7rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .technologies {
       padding: 7rem 2rem; } }
@@ -593,9 +613,6 @@ body {
   background-size: cover;
   background-position: top; }
   @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
-    .header {
-      height: 100vh; } }
-  @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
     .header {
       height: 100vh; } }
   @media only screen and (max-width: 37.5em) {
