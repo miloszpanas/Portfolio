@@ -364,10 +364,16 @@ body {
   cursor: pointer; }
   .menu-button-background.hide {
     display: none; }
+  @media only screen and (min-width: 20em) and (max-width: 41.68em) and (-webkit-min-device-pixel-ratio: 2) {
+    .menu-button-background {
+      width: 7rem;
+      height: 7rem;
+      background: green; } }
   @media only screen and (max-width: 37.5em) {
     .menu-button-background {
       width: 7rem;
-      height: 7rem; } }
+      height: 7rem;
+      background: orange; } }
 
 .menu-btn {
   position: fixed;

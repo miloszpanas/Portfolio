@@ -14,9 +14,16 @@
     display: none;
   }
 
+  @include media(phone-pxr-2) {
+    width: 7rem;
+    height: 7rem;
+    background: green;
+  }
+
   @include media(phone) {
     width: 7rem;
     height: 7rem;
+    background: orange;
   }
 }
 
