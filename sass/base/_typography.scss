@@ -38,6 +38,11 @@ body {
       font-size: 5rem;
     }
 
+    @include media(phone-small) {
+      letter-spacing: 0.3rem;
+      font-size: 4rem;
+    }
+
     &-2 {
       background-image: linear-gradient(to right, $color-golden, $color-yellow);
       background-clip: text;
@@ -77,6 +82,11 @@ body {
       letter-spacing: 0.4rem;
       font-size: 2.1rem;
     }
+
+    @include media(phone-small) {
+      letter-spacing: 0.3rem;
+      font-size: 1.9rem;
+    }
   }
 }
 
@@ -99,6 +109,10 @@ body {
     font-size: 4.2rem;
   }
 
+  @include media(phone-small) {
+    font-size: 3.8rem;
+  }
+
   &--white {
     background-image: linear-gradient(to right, $color-primary, #fff);
   }
@@ -110,6 +124,11 @@ body {
 
     @include media(phone) {
       line-height: 1.4;
+    }
+
+    @include media(phone-small) {
+      line-height: 1.3;
+      margin-bottom: 1rem;
     }
   }
 }

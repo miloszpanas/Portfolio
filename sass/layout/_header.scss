@@ -42,6 +42,10 @@
     @include media(phone) {
       height: 4.5rem;
     }
+
+    @include media(phone-small) {
+      height: 3.5rem;
+    }
   }
 
   &__text-box {
@@ -66,6 +70,10 @@
 
     @include media(phone-land-small) {
       top: 56%;
+    }
+
+    @include media(phone-small) {
+      top: 49%;
     }
   }
 
@@ -100,6 +108,11 @@
     @include media(phone) {
       bottom: 2rem;
       left: 2.5rem;
+    }
+
+    @include media(phone-small) {
+      bottom: 1rem;
+      left: 2rem;
     }
 
     @include media(phone-land-small) {

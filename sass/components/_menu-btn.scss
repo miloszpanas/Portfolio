@@ -17,13 +17,16 @@
   @include media(tab-port) {
     width: 7rem;
     height: 7rem;
-    background: red;
   }
 
   @include media(phone) {
     width: 7rem;
     height: 7rem;
-    background: blue;
+  }
+
+  @include media(phone-small) {
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -38,6 +41,11 @@
   @include media(phone) {
     right: 5.4rem;
     top: 5.2rem;
+  }
+
+  @include media(phone-small) {
+    width: 2.7rem;
+    height: 3rem;
   }
 
   // &::before {
@@ -62,6 +70,10 @@
 
     @include media(phone) {
       width: 3.5rem;
+    }
+
+    @include media(phone-small) {
+      width: 3rem;
     }
   }
 

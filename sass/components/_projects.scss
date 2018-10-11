@@ -3,6 +3,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 7rem;
+
+    @include media(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+
+    @include media(phone-small) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
   }
 
   &__image {
