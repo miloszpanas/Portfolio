@@ -410,10 +410,11 @@ body {
     transition: all 0.3s ease-out; }
 
 .btn-project--light {
-  background-color: peru;
+  background: linear-gradient(to right top, rgba(205, 133, 63, 0.9), rgba(238, 206, 26, 0.9));
   color: #0b1622; }
   .btn-project--light:hover, .btn-project--light:active {
-    background: #845222;
+    background: linear-gradient(to right top, rgba(205, 133, 63, 0.9), rgba(238, 206, 26, 0.9));
+    filter: brightness(120%);
     transition: all 0.3s ease-out;
     color: #e7dede; }
 
@@ -555,7 +556,7 @@ body {
 
 .work {
   padding: 11rem 15rem;
-  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-2.jpg);
+  background-image: linear-gradient(to right top, rgba(153, 153, 153, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-2.jpg);
   background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 75em) {
@@ -580,7 +581,7 @@ body {
 
 .contact {
   padding: 11rem 6rem;
-  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-3.jpg);
+  background-image: linear-gradient(to right top, rgba(153, 153, 153, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-3.jpg);
   background-size: cover;
   background-position: top; }
 
@@ -588,7 +589,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(to right top, rgba(119, 119, 119, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-1.jpg);
+  background-image: linear-gradient(to right top, rgba(153, 153, 153, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-1.jpg);
   background-size: cover;
   background-position: top; }
   @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {

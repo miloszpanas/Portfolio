@@ -31,12 +31,13 @@
   }
 
   &--light {
-    background-color: $color-golden;
+    background: $background-secondary;
     color: $color-secondary-2;
 
     &:hover,
     &:active {
-      background: darken($color-golden, 20);
+      background: ($background-secondary);
+      filter: brightness(120%);
       @include easeOut-2;
       color: $color-primary;
     }
