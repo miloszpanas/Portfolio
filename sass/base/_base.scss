@@ -8,6 +8,21 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
+
+  @include media(tab-land) {
+    // width < 1200px
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include media(tab-port) {
+    // width < 900px
+    font-size: 50%; //1rem =8px
+  }
+
+  @include media(phone) {
+    // width < 600px
+    font-size: 43.75%; // 1rem = 7px
+  }
 }
 
 body {
@@ -15,6 +30,6 @@ body {
 }
 
 ::selection {
-  background-color: $color-secondary;
+  background-color: $color-golden;
   color: $color-primary;
 }

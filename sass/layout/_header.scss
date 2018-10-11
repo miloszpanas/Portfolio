@@ -1,14 +1,26 @@
 .header {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   background-image: $background-primary, url(../img/background-image-1.jpg);
   background-size: cover;
   background-position: top;
 
-  // see if it is necessary when finished, possibly adjust with media queries
-  // background-image: url(../../img/header-replacement.png);
-  // background-size: cover;
+  @include media(phone-land-large) {
+    height: 100vh;
+  }
+
+  @include media(phone-land-medium) {
+    height: 100vh;
+  }
+
+  @include media(phone) {
+    height: 100vh;
+  }
+
+  @include media(phone-land-small) {
+    width: 100vw;
+  }
 
   &__logo-box {
     position: absolute;
@@ -18,6 +30,14 @@
 
   &__logo {
     height: 5.5rem;
+
+    @include media(phone-land-medium) {
+      height: 4.5rem;
+    }
+
+    @include media(phone) {
+      height: 4.5rem;
+    }
   }
 
   &__text-box {
@@ -27,6 +47,18 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90vw;
+
+    @include media(phone-land-large) {
+      top: 56%;
+    }
+
+    @include media(phone-land-medium) {
+      top: 56%;
+    }
+
+    @include media(phone-land-small) {
+      top: 56%;
+    }
   }
 
   &__icons-list {
@@ -40,6 +72,27 @@
     left: 4.5rem;
     animation: appear 1s ease-out 0.7s;
     animation-fill-mode: backwards;
+    z-index: 2;
+
+    @include media(phone-land-large) {
+      bottom: 0.5rem;
+      left: 2.5rem;
+    }
+
+    @include media(phone-land-medium) {
+      bottom: 0.5rem;
+      left: 2.5rem;
+    }
+
+    @include media(phone) {
+      bottom: 2rem;
+      left: 2.5rem;
+    }
+
+    @include media(phone-land-small) {
+      bottom: 0;
+      left: 2.5rem;
+    }
   }
 
   &__icons-item {

@@ -2,6 +2,10 @@
   padding: 11rem 0 16rem 0;
   background-color: $color-grey-light-2;
   position: relative;
+
+  @include media(tab-port) {
+    padding: 8rem 0 13rem 0;
+  }
 }
 
 .work {
@@ -9,11 +13,31 @@
   background-image: $background-primary, url(../img/background-image-2.jpg);
   background-size: cover;
   background-position: top;
+
+  @include media(tab-land) {
+    padding: 11rem 10rem;
+  }
+
+  @include media(tab-port) {
+    padding: 7rem 10rem;
+  }
+
+  @include media(phone) {
+    padding: 7rem 3rem;
+  }
 }
 
 .technologies {
   padding: 11rem 6rem;
   background-color: $color-grey-light-2;
+
+  @include media(tab-port) {
+    padding: 8rem 5rem;
+  }
+
+  @include media(phone) {
+    padding: 7rem 2rem;
+  }
 }
 
 .contact {

@@ -1,5 +1,5 @@
 @mixin easeOut {
-  transition: all 0.5s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 @mixin easeOut-2 {
@@ -25,12 +25,31 @@ ORDER: Base + ty[pgra[hy > general layout + grid > page layout > components
 
 // 1em = 16px
 
-@mixin respond($breakpoint) {
+@mixin media($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
     } // 600px
   }
+
+  @if $breakpoint == phone-land-small {
+    @media only screen and (min-width: 20em) and (max-width: 35.5em) and (orientation: landscape) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-land-medium {
+    @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-land-large {
+    @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
       @content;
