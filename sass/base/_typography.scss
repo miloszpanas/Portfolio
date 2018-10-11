@@ -40,7 +40,7 @@ body {
 
     @include media(phone-small) {
       letter-spacing: 0.3rem;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     &-2 {
@@ -85,7 +85,7 @@ body {
 
     @include media(phone-small) {
       letter-spacing: 0.3rem;
-      font-size: 1.9rem;
+      font-size: 1.4rem;
     }
   }
 }
@@ -110,7 +110,7 @@ body {
   }
 
   @include media(phone-small) {
-    font-size: 3.8rem;
+    font-size: 2.6rem;
   }
 
   &--white {
