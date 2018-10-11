@@ -389,15 +389,15 @@ body {
     .menu-button-background {
       width: 7rem;
       height: 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .menu-button-background {
+      width: 7rem;
+      height: 7rem; } }
   @media only screen and (max-width: 19.56em) {
     .menu-button-background {
       width: 6rem;
       height: 6rem;
       background: red; } }
-  @media only screen and (max-width: 37.5em) {
-    .menu-button-background {
-      width: 7rem;
-      height: 7rem; } }
 
 .menu-btn {
   position: fixed;
@@ -478,7 +478,7 @@ body {
   grid-gap: 7rem; }
   @media only screen and (max-width: 37.5em) {
     .work__projects {
-      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
   @media only screen and (max-width: 19.56em) {
     .work__projects {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); } }
@@ -631,7 +631,7 @@ body {
       padding: 7rem 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .work {
-      padding: 7rem 5.5rem; } }
+      padding: 7rem 2rem; } }
   @media only screen and (max-width: 19.56em) {
     .work {
       padding: 7rem 2rem; } }
