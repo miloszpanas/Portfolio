@@ -26,6 +26,10 @@
     padding: 7rem 7rem;
   }
 
+  @include media(phone-land-medium) {
+    padding: 6rem 7rem;
+  }
+
   @include media(phone) {
     padding: 7rem 3rem;
   }
@@ -57,6 +61,10 @@
   background-image: $background-primary, url(../img/background-image-3.jpg);
   background-size: cover;
   background-position: top;
+
+  @include media(phone-land-medium) {
+    padding: 5rem 5rem;
+  }
 
   @include media(phone) {
     padding: 6rem 4rem;

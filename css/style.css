@@ -286,12 +286,20 @@ body {
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 7rem;
-    transform: skewX(-12deg); }
+    transform: skewX(-12deg);
+    border-left: 3px peru solid;
+    border-top: 3px peru solid; }
     @media only screen and (max-width: 56.25em) {
       .about-info__wrapper {
         transform: skewX(0);
         max-width: 80vw;
-        box-shadow: 2rem 2rem 7rem rgba(25, 45, 92, 0.4); } }
+        box-shadow: 2rem 2rem 7rem rgba(25, 45, 92, 0.4);
+        border-left: 3px peru solid;
+        border-top: 3px peru solid; } }
+    @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+      .about-info__wrapper {
+        border-left: 3px peru solid;
+        border-top: 3px peru solid; } }
     @media only screen and (max-width: 37.5em) {
       .about-info__wrapper {
         max-width: 85vw;
@@ -306,7 +314,7 @@ body {
     height: 30rem;
     float: left;
     overflow: hidden;
-    margin-right: 3rem;
+    margin-right: 5rem;
     margin-bottom: 1rem;
     transform: skewX(12deg);
     filter: brightness(90%); }
@@ -327,6 +335,7 @@ body {
         width: 26rem;
         height: 26rem;
         margin-bottom: 0.8rem;
+        margin-right: 5rem;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 46% 50%); } }
     @media only screen and (max-width: 37.5em) {
@@ -645,6 +654,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .work {
       padding: 7rem 7rem; } }
+  @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+    .work {
+      padding: 6rem 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .work {
       padding: 7rem 3rem; } }
@@ -667,6 +679,9 @@ body {
   background-image: linear-gradient(to right top, rgba(153, 153, 153, 0.9), rgba(25, 45, 92, 0.9)), url(../img/background-image-3.jpg);
   background-size: cover;
   background-position: top; }
+  @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+    .contact {
+      padding: 5rem 5rem; } }
   @media only screen and (max-width: 37.5em) {
     .contact {
       padding: 6rem 4rem; } }

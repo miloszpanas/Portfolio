@@ -10,11 +10,20 @@
     background-color: rgba($white, 0.7);
     padding: 7rem;
     transform: skewX(-12deg);
+    border-left: 3px $color-golden solid;
+    border-top: 3px $color-golden solid;
 
     @include media(tab-port) {
       transform: skewX(0);
       max-width: 80vw;
       box-shadow: 2rem 2rem 7rem rgba($color-secondary--light, 0.4);
+      border-left: 3px $color-golden solid;
+      border-top: 3px $color-golden solid;
+    }
+
+    @include media(phone-land-medium) {
+      border-left: 3px $color-golden solid;
+      border-top: 3px $color-golden solid;
     }
 
     @include media(phone) {
@@ -38,7 +47,7 @@
     // border-radius: 50%;
     float: left;
     overflow: hidden;
-    margin-right: 3rem;
+    margin-right: 5rem;
     margin-bottom: 1rem;
     transform: skewX(12deg);
     filter: brightness(90%);
@@ -60,6 +69,7 @@
       width: 26rem;
       height: 26rem;
       margin-bottom: 0.8rem;
+      margin-right: 5rem;
       -webkit-shape-outside: circle(50% at 50% 50%);
       shape-outside: circle(50% at 46% 50%);
     }
