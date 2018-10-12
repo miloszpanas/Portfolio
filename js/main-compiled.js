@@ -1,30 +1,32 @@
+"use strict";
+
 // SET THE VIEWPORT HEIGHT
 
 // get the viewport height and we multiple it by 1% to get a value for a vh unit
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", vh + "px");
 
-window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
+window.addEventListener("resize", function () {
+  var vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", vh + "px");
 });
 
 // NAVIGATION
 
 // Select DOM Items
 
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".navigation");
-const menuList = document.querySelector(".navigation__menu");
-const menuAuthor = document.querySelector(".navigation__author");
-const menuBtnBackground = document.querySelector(".menu-button-background");
+var menuBtn = document.querySelector(".menu-btn");
+var menu = document.querySelector(".navigation");
+var menuList = document.querySelector(".navigation__menu");
+var menuAuthor = document.querySelector(".navigation__author");
+var menuBtnBackground = document.querySelector(".menu-button-background");
 
-const navItems = document.querySelectorAll(".navigation__item");
+var navItems = document.querySelectorAll(".navigation__item");
 
 // Set initial state of the menu
 
-let showMenu = false;
+var showMenu = false;
 
 menuBtnBackground.addEventListener("click", toggleMenu);
 menuBtn.addEventListener("click", toggleMenu);
@@ -35,7 +37,9 @@ function toggleMenu() {
     menu.classList.add("show");
     menuAuthor.classList.add("show");
     menuList.classList.add("show");
-    navItems.forEach(item => item.classList.add("show"));
+    navItems.forEach(function (item) {
+      return item.classList.add("show");
+    });
     menuBtnBackground.classList.add("hide");
 
     // Set menu state
@@ -45,7 +49,9 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuAuthor.classList.remove("show");
     menuList.classList.remove("show");
-    navItems.forEach(item => item.classList.remove("show"));
+    navItems.forEach(function (item) {
+      return item.classList.remove("show");
+    });
     menuBtnBackground.classList.remove("hide");
 
     // Set menu state
