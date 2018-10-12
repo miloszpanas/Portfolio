@@ -35,7 +35,7 @@ body {
 
     @include media(phone) {
       letter-spacing: 0.4rem;
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     @include media(phone-small) {
@@ -80,7 +80,7 @@ body {
 
     @include media(phone) {
       letter-spacing: 0.4rem;
-      font-size: 2.1rem;
+      font-size: 1.8rem;
     }
 
     @include media(phone-small) {
@@ -106,7 +106,7 @@ body {
   }
 
   @include media(phone) {
-    font-size: 4.2rem;
+    font-size: 3.5rem;
   }
 
   @include media(phone-small) {

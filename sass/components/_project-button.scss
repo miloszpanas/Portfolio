@@ -11,6 +11,10 @@
     text-decoration: none;
     border-radius: 2px;
 
+    @include media(phone) {
+      font-size: 2.4rem;
+    }
+
     @include media(phone-small) {
       font-size: 2.5rem;
     }

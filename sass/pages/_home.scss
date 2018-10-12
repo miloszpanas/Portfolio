@@ -6,6 +6,10 @@
   @include media(tab-port) {
     padding: 8rem 0 13rem 0;
   }
+
+  @include media(phone) {
+    padding: 6rem 0 10rem 0;
+  }
 }
 
 .work {
@@ -23,11 +27,11 @@
   }
 
   @include media(phone) {
-    padding: 7rem 2rem;
+    padding: 7rem 3rem;
   }
 
   @include media(phone-small) {
-    padding: 7rem 2rem;
+    padding: 7rem 1rem;
   }
 }
 
@@ -53,4 +57,8 @@
   background-image: $background-primary, url(../img/background-image-3.jpg);
   background-size: cover;
   background-position: top;
+
+  @include media(phone) {
+    padding: 6rem 4rem;
+  }
 }
