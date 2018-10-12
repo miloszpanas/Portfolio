@@ -26,6 +26,16 @@
     position: absolute;
     top: 4.5rem;
     left: 4.5rem;
+
+    @include media(phone) {
+      top: 2.5rem;
+      left: 2.5rem;
+    }
+
+    @include media(phone-land-medium) {
+      top: 3rem;
+      left: 3rem;
+    }
   }
 
   &__logo {
@@ -36,7 +46,7 @@
     }
 
     @include media(phone-land-medium) {
-      height: 4.5rem;
+      height: 3.5rem;
     }
 
     @include media(phone) {
@@ -137,6 +147,10 @@
     &:active {
       transform: scale(1.4);
       @include easeOut-2;
+    }
+
+    @include media(phone) {
+      font-size: 3rem;
     }
   }
 }

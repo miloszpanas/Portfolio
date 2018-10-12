@@ -19,15 +19,19 @@
     height: 7rem;
   }
 
+  @include media(phone-land-medium) {
+    width: 6rem;
+    height: 6rem;
+  }
+
   @include media(phone) {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   @include media(phone-small) {
     width: 6rem;
     height: 6rem;
-    background: red;
   }
 }
 
@@ -40,8 +44,13 @@
   @include easeOut;
 
   @include media(phone) {
-    right: 5.4rem;
-    top: 5.2rem;
+    right: 4.9rem;
+    top: 4.7rem;
+  }
+
+  @include media(phone-land-medium) {
+    right: 4.8rem;
+    top: 4.8rem;
   }
 
   @include media(phone-small) {
