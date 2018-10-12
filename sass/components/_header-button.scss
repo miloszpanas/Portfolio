@@ -14,6 +14,14 @@
     cursor: pointer;
     position: relative;
     transition: all 0.2s;
+
+    @include media(phone-land-medium) {
+      padding: 1.5rem 5rem;
+    }
+
+    @include media(phone) {
+      padding: 1.5rem 5rem;
+    }
   }
 
   &:hover {

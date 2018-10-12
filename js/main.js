@@ -1,3 +1,17 @@
+// SET THE VIEWPORT HEIGHT
+
+let vh = window.innerHeight * 0.01; // get the viewport height and pultiply it by 1% to get a value for a vh unit
+
+document.documentElement.style.setProperty("--vh", `${vh}px`); // set the value in the --vh custom property to the root of the document
+
+// Update the size on viewport's height change
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
+
+// NAVIGATION
+
 // Select DOM Items
 
 const menuBtn = document.querySelector(".menu-btn");

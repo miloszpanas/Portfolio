@@ -1,22 +1,11 @@
 .header {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   background-image: $background-primary, url(../img/background-image-1.jpg);
   background-size: cover;
   background-position: top;
-
-  @include media(tab-port) {
-    height: 100vh;
-  }
-
-  @include media(phone-land-large) {
-    height: 100vh;
-  }
-
-  @include media(phone) {
-    height: 100vh;
-  }
 
   @include media(phone-land-small) {
     width: 100vw;
@@ -125,6 +114,14 @@
   &__icons-item {
     &:not(:last-child) {
       margin-bottom: 1.1rem;
+
+      @include media(phone-land-medium) {
+        margin-bottom: 0.5rem;
+      }
+
+      @include media(phone) {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -147,10 +144,6 @@
     &:active {
       transform: scale(1.4);
       @include easeOut-2;
-    }
-
-    @include media(phone) {
-      font-size: 3rem;
     }
   }
 }

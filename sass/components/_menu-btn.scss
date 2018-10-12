@@ -20,13 +20,17 @@
   }
 
   @include media(phone-land-medium) {
-    width: 6rem;
-    height: 6rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 1.9rem;
+    right: 1.9rem;
   }
 
   @include media(phone) {
-    width: 6rem;
-    height: 6rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 1.9rem;
+    right: 1.9rem;
   }
 
   @include media(phone-small) {
@@ -44,13 +48,13 @@
   @include easeOut;
 
   @include media(phone) {
-    right: 4.9rem;
-    top: 4.7rem;
+    right: 3.2rem;
+    top: 3.7rem;
   }
 
   @include media(phone-land-medium) {
-    right: 4.8rem;
-    top: 4.8rem;
+    right: 3.2rem;
+    top: 3.7rem;
   }
 
   @include media(phone-small) {
@@ -65,8 +69,14 @@
     background: $color-secondary;
     @include easeOut;
 
+    @include media(phone-land-medium) {
+      width: 3rem;
+      height: 0.2rem;
+    }
+
     @include media(phone) {
-      width: 3.5rem;
+      width: 3rem;
+      height: 0.2rem;
     }
 
     @include media(phone-small) {
