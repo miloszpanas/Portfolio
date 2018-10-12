@@ -22,6 +22,10 @@
     @include media(phone) {
       padding: 1.5rem 5rem;
     }
+
+    @include media(phone-hd) {
+      padding: 4.5rem 7rem;
+    }
   }
 
   &:hover {

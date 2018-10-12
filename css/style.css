@@ -232,6 +232,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       padding: 1.5rem 5rem; } }
+  @media only screen and (min-resolution: 192dpi) and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 2) {
+    .btn, .btn:link, .btn:visited {
+      padding: 4.5rem 7rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);

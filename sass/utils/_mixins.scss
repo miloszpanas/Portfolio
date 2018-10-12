@@ -32,6 +32,12 @@ ORDER: Base + ty[pgra[hy > general layout + grid > page layout > components
     } // 313
   }
 
+  @if $breakpoint == phone-hd {
+    @media only screen and (min-resolution: 192dpi) and (max-width: 37.5em) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
