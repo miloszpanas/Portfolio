@@ -61,22 +61,6 @@
     &::after {
       background: #fff;
     }
-
-    @include media(tab-land) {
-      background-color: red;
-    }
-
-    @include media(tab-port) {
-      background-color: green;
-    }
-
-    @include media(phone) {
-      background-color: yellow;
-    }
-
-    @include media(phone-small) {
-      background-color: black;
-    }
   }
 
   &--animated {
