@@ -262,6 +262,18 @@ body {
   color: #777; }
   .btn--white::after {
     background: #fff; }
+  @media only screen and (max-width: 75em) {
+    .btn--white {
+      background-color: red; } }
+  @media only screen and (max-width: 56.25em) {
+    .btn--white {
+      background-color: green; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn--white {
+      background-color: yellow; } }
+  @media only screen and (max-width: 19.56em) {
+    .btn--white {
+      background-color: black; } }
 
 .btn--animated {
   animation: fromBottom 1s ease-out 0.8s;
