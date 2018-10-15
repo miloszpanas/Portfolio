@@ -14,6 +14,7 @@
 
     <title>Miłosz Panas Portfolio</title>
 
+
 </head>
 
 <body>
@@ -38,22 +39,22 @@
                 </a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#about" class="navigation__link">
                     About me
                 </a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                    Technologies
-                </a>
-            </li>
-            <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#my-work" class="navigation__link">
                     My work
                 </a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#technologies" class="navigation__link">
+                    Technologies
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="#contact" class="navigation__link">
                     Contact me
                 </a>
             </li>
@@ -70,22 +71,25 @@
 
         <ul class="header__icons-list">
             <li class="header__icons-item">
-                <a href="" class="header__icons-link">
+                <a href="https://www.linkedin.com/in/milosz-panas-78459641/" target="_blank" class="header__icons-link">
                     <i class="fab fa-linkedin header__icon"></i>
                 </a>
             </li>
             <li class="header__icons-item">
-                <a href="" class="header__icons-link">
+                <a href="https://github.com/miloszpanas" target="_blank" class="header__icons-link">
                     <i class="fab fa-github header__icon"></i>
                 </a>
             </li>
             <li class="header__icons-item">
-                <a href="https://www.linkedin.com/pulse/case-study-skutecznie-sprzedaj%C4%99-saas-na-linkedin-moje-ferenc/"
-                    class="header__icons-link">
+                <a href="https://m.me/miloszpanas" class="header__icons-link">
                     <i class="fab fa-facebook-messenger header__icon"></i>
                 </a>
             </li>
         </ul>
+
+        <div id="scrolldown" class="scroll">
+            <a href="#about-scroll"><span></span>Scroll</a>
+        </div>
 
         <div class="header__text-box">
             <h1 class="heading-primary">
@@ -93,13 +97,13 @@
                 <span class="heading-primary--sub">Front-end developer</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Get in touch</a>
+            <a href="#contact" class="btn btn--white btn--animated">Get in touch</a>
         </div>
     </header>
 
     <!-- SECTION ABOUT ME -->
     <main>
-        <section class="section-about">
+        <section class="section-about" id="about" id="about-scroll">
             <div class="center-text margin-bottom-big">
                 <h2 class="heading-secondary">
                     About me
@@ -130,7 +134,7 @@
         </section>
 
         <!-- MY WORKS SECTION -->
-        <section class="work">
+        <section class="work" id="my-work">
             <div class="margin-bottom-big center-text">
                 <h2 class="heading-secondary heading-secondary--white">
                     <span class="heading-secondary">My</span> works
@@ -289,7 +293,7 @@
         </section>
 
         <!-- TECHNOLOGIES SECTION -->
-        <section class="technologies">
+        <section class="technologies" id="technologies">
             <div class="margin-bottom-big center-text">
                 <h2 class="heading-secondary heading-secondary--small-lh">
                     Technologies and Tools
@@ -346,7 +350,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="margin-bottom-big center-text">
                 <h2 class="heading-secondary heading-secondary--white">
                     Contact <span class="heading-secondary">Me</span>
@@ -366,17 +370,17 @@
                 <div class="contact__social">
                     <ul class="contact__social-list">
                         <li class="contact__social-item">
-                            <a href="" class="contact__social-link">
+                            <a href="https://www.linkedin.com/in/milosz-panas-78459641/" target="_blank" class="contact__social-link">
                                 <i class="fab fa-linkedin contact__social-icon"></i>
                             </a>
                         </li>
                         <li class="contact__social-item">
-                            <a href="" class="contact__social-link">
+                            <a href="https://github.com/miloszpanas" target="_blank" class="contact__social-link">
                                 <i class="fab fa-github contact__social-icon"></i>
                             </a>
                         </li>
                         <li class="contact__social-item">
-                            <a href="" class="contact__social-link">
+                            <a href="https://m.me/miloszpanas" target="blank" class="contact__social-link">
                                 <i class="fab fa-facebook-messenger contact__social-icon"></i>
                             </a>
                         </li>
@@ -393,7 +397,7 @@
                 2018</p>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/main-compiled.js"></script>
 </body>
 
