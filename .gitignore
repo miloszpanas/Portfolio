@@ -36,6 +36,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+#vendors folder
+vendors/
+
 # TypeScript v1 declaration files
 typings/
 
