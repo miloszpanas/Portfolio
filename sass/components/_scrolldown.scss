@@ -31,6 +31,14 @@
 }
 #scrolldown a {
   padding-top: 6rem;
+
+  @include media(phone-land-large) {
+    display: none;
+  }
+
+  @include media(phone-land-medium) {
+    display: none;
+  }
 }
 #scrolldown a span {
   position: absolute;

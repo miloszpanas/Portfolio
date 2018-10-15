@@ -240,6 +240,12 @@ body {
 
 #scrolldown a {
   padding-top: 6rem; }
+  @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
+    #scrolldown a {
+      display: none; } }
+  @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
+    #scrolldown a {
+      display: none; } }
 
 #scrolldown a span {
   position: absolute;
