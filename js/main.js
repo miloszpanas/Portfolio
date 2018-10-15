@@ -18,6 +18,7 @@ const menu = document.querySelector(".navigation");
 const menuList = document.querySelector(".navigation__menu");
 const menuAuthor = document.querySelector(".navigation__author");
 const menuBtnBackground = document.querySelector(".menu-button-background");
+const navLink = document.querySelector(".navigation__link");
 
 const navItems = document.querySelectorAll(".navigation__item");
 
@@ -51,6 +52,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// close menu
 
 // Smooth scrolling to sections
 

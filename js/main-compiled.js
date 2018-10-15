@@ -20,6 +20,7 @@ var menu = document.querySelector(".navigation");
 var menuList = document.querySelector(".navigation__menu");
 var menuAuthor = document.querySelector(".navigation__author");
 var menuBtnBackground = document.querySelector(".menu-button-background");
+var navLink = document.querySelector(".navigation__link");
 
 var navItems = document.querySelectorAll(".navigation__item");
 
@@ -57,6 +58,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// close menu
 
 // Smooth scrolling to sections
 
