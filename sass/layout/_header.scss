@@ -34,12 +34,16 @@
       height: 4.5rem;
     }
 
+    @include media(phone-land-large) {
+      display: none;
+    }
+
     @include media(phone-land-medium) {
-      height: 4em;
+      display: none;
     }
 
     @include media(phone) {
-      height: 4em;
+      display: none;
     }
   }
 
@@ -56,7 +60,15 @@
     }
 
     @include media(phone-land-large) {
-      top: 56%;
+      top: 52%;
+    }
+
+    @include media(phone-land-medium) {
+      top: 51%;
+    }
+
+    @include media(phone) {
+      top: 51%;
     }
   }
 

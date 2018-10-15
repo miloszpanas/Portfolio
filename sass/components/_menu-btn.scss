@@ -52,6 +52,11 @@
     top: 4.7rem;
   }
 
+  @include media(phone-land-large) {
+    right: 5.2rem;
+    top: 5.4rem;
+  }
+
   @include media(phone-land-medium) {
     right: 4rem;
     top: 4.7rem;
@@ -98,15 +103,8 @@
       }
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(8px, -8px);
+        transform: rotate(-45deg) translate(5px, -5px);
       }
     }
   }
-
-  // &.close::before {
-  //   z-index: -1;
-  //   opacity: 0;
-  //   display: none;
-  //   @include easeOut;
-  // }
 }

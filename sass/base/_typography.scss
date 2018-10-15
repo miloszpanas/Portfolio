@@ -30,7 +30,7 @@ body {
 
     @include media(phone-land-medium) {
       letter-spacing: 0.4rem;
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     @include media(phone) {
@@ -75,7 +75,7 @@ body {
 
     @include media(phone-land-medium) {
       letter-spacing: 0.7rem;
-      font-size: 2.2rem;
+      font-size: 1.7rem;
     }
 
     @include media(phone) {

@@ -19,6 +19,7 @@
     float: left;
     width: 50%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
     z-index: 1000;
     @include easeOut;
