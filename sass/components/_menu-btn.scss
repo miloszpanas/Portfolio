@@ -103,7 +103,19 @@
       }
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(8px, -8px);
+
+        @include media(tab-port) {
+          transform: rotate(-45deg) translate(3px, -3px);
+        }
+
+        @include media(phone-land-large) {
+          transform: rotate(-45deg) translate(3px, -3px);
+        }
+
+        @include media(phone) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
       }
     }
   }

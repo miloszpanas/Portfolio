@@ -18,7 +18,6 @@ const menu = document.querySelector(".navigation");
 const menuList = document.querySelector(".navigation__menu");
 const menuAuthor = document.querySelector(".navigation__author");
 const menuBtnBackground = document.querySelector(".menu-button-background");
-const navLink = document.querySelector(".navigation__link");
 
 const navItems = document.querySelectorAll(".navigation__item");
 
@@ -53,27 +52,25 @@ function toggleMenu() {
   }
 }
 
-// close menu
+$(".navigation__link").on("click", function() {
+  toggleMenu();
+});
 
 // Smooth scrolling to sections
 
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
     if (
       location.pathname.replace(/^\//, "") ==
         this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      // Does a scroll target exist?
+
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $("html, body").animate(
           {
@@ -81,16 +78,13 @@ $('a[href*="#"]')
           },
           1000,
           function() {
-            // Callback after animation
-            // Must change focus!
             var $target = $(target);
             $target.focus();
             if ($target.is(":focus")) {
-              // Checking if the target was focused
               return false;
             } else {
-              $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
+              $target.attr("tabindex", "-1");
+              $target.focus();
             }
           }
         );

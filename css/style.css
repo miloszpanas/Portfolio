@@ -567,7 +567,16 @@ body {
       .menu-btn.close .menu-btn__line:nth-child(2) {
         opacity: 0; }
       .menu-btn.close .menu-btn__line:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px); }
+        transform: rotate(-45deg) translate(8px, -8px); }
+        @media only screen and (max-width: 56.25em) {
+          .menu-btn.close .menu-btn__line:nth-child(3) {
+            transform: rotate(-45deg) translate(3px, -3px); } }
+        @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
+          .menu-btn.close .menu-btn__line:nth-child(3) {
+            transform: rotate(-45deg) translate(3px, -3px); } }
+        @media only screen and (max-width: 37.5em) {
+          .menu-btn.close .menu-btn__line:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px); } }
 
 .btn-project, .btn-project:link, .btn-project:visited {
   display: block;
@@ -927,7 +936,8 @@ body {
       .navigation__author, .navigation__menu {
         float: none;
         width: 100%;
-        min-height: 0; } }
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100); } }
     @media only screen and (min-width: 20em) and (max-width: 35.5em) and (orientation: landscape) {
       .navigation__author, .navigation__menu {
         float: left;
@@ -939,6 +949,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .navigation__menu {
         height: 70vh;
+        height: calc(var(--vh, 1vh) * 70);
         transform: translate3d(100%, 0, 0); } }
     @media only screen and (min-width: 20em) and (max-width: 35.5em) and (orientation: landscape) {
       .navigation__menu {
@@ -951,6 +962,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .navigation__author {
         height: 30vh;
+        height: calc(var(--vh, 1vh) * 30);
         transform: translate3d(-100%, 0, 0); } }
     .navigation__author.show {
       transform: translate3d(0, 0, 0); }
@@ -968,8 +980,9 @@ body {
         height: 23rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__portrait {
-        width: 16em;
-        height: 16em; } }
+        width: 31vw;
+        height: 31vw;
+        margin: 1rem; } }
   .navigation__item {
     list-style-type: none;
     transform: translate3d(90rem, 0, 0);
@@ -988,13 +1001,13 @@ body {
     transition: all 0.3s ease-out; }
     @media only screen and (min-width: 25.88em) and (max-width: 46em) and (orientation: landscape) {
       .navigation__link:link, .navigation__link:visited {
-        font-size: 3rem; } }
+        font-size: 2.2rem; } }
     @media only screen and (min-width: 23.46em) and (max-width: 41.69em) and (orientation: landscape) {
       .navigation__link:link, .navigation__link:visited {
         font-size: 2.2rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__link:link, .navigation__link:visited {
-        font-size: 2.5rem; } }
+        font-size: 3.5rem; } }
   .navigation__link:hover, .navigation__link:active {
     color: peru; }
 
