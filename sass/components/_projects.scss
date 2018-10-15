@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 7rem;
+    align-items: center;
 
     @include media(phone) {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -24,5 +25,13 @@
       border-color: $color-golden;
       @include easeOut;
     }
+  }
+
+  &__project-name {
+    font-size: 2.5rem;
+    border: 3px #e7dede solid;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
