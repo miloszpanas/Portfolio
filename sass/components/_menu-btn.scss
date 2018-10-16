@@ -106,11 +106,11 @@
         transform: rotate(-45deg) translate(8px, -8px);
 
         @include media(tab-port) {
-          transform: rotate(-45deg) translate(3px, -3px);
+          transform: rotate(-45deg) translate(6px, -5px);
         }
 
         @include media(phone-land-large) {
-          transform: rotate(-45deg) translate(3px, -3px);
+          transform: rotate(-45deg) translate(6px, -5px);
         }
 
         @include media(phone) {
