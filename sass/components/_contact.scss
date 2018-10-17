@@ -22,7 +22,6 @@
     }
 
     &:hover {
-      padding: 1rem 2rem;
       background: rgba($color-golden, 0.5);
       color: $color-primary;
       @include easeOut;
