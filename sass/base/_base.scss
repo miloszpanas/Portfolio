@@ -11,12 +11,12 @@ html {
 
   @include media(tab-land) {
     // width < 1200px
-    font-size: 54%; // 1rem = 9px
+    font-size: 47%; // 1rem = 9px
   }
 
   @include media(tab-port) {
     // width < 900px
-    font-size: 50%; //1rem =8px
+    font-size: 47%; //1rem =8px
   }
 
   @include media(phone) {

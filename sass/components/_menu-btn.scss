@@ -47,6 +47,11 @@
   cursor: pointer;
   @include easeOut;
 
+  @include media(tab-port) {
+    right: 5.2rem;
+    top: 5.2rem;
+  }
+
   @include media(phone) {
     right: 4rem;
     top: 4.7rem;
