@@ -7,11 +7,11 @@
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
+  font-size: 55%; // 1rem = 10px
 
   @include media(tab-land) {
     // width < 1200px
-    font-size: 56.25%; // 1rem = 9px
+    font-size: 54%; // 1rem = 9px
   }
 
   @include media(tab-port) {
