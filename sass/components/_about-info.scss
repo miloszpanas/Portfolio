@@ -13,6 +13,14 @@
     border-left: 3px $color-golden solid;
     border-top: 3px $color-golden solid;
 
+    @include media(tab-land) {
+      transform: skewX(0);
+      max-width: 73vw;
+      box-shadow: 2rem 2rem 7rem rgba($color-secondary--light, 0.4);
+      border-left: 3px $color-golden solid;
+      border-top: 3px $color-golden solid;
+    }
+
     @include media(tab-port) {
       transform: skewX(0);
       max-width: 80vw;
@@ -64,6 +72,10 @@
       border-radius: none;
     }
 
+    @include media(tab-land) {
+      transform: skewX(0);
+    }
+
     @include media(tab-port) {
       transform: skewX(0);
       width: 26rem;
@@ -105,6 +117,10 @@
 
   &__text {
     transform: skewX(12deg);
+
+    @include media(tab-land) {
+      transform: skewX(0);
+    }
 
     @include media(tab-port) {
       transform: skewX(0);
